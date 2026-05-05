@@ -94,7 +94,7 @@ export default function ProjectModal({ isOpen, onClose, onContactClick, project 
                   {/* Right: Architecture Diagram (7 Columns) */}
                   <div className="lg:col-span-7 relative aspect-[4/3] rounded-3xl overflow-hidden bg-white shadow-2xl border border-black/5 group">
                       <img 
-                        src={isP2 ? "/vedio/3.png" : "/vedio/4.png"} 
+                        src={isP2 ? `${import.meta.env.BASE_URL}vedio/3.png` : `${import.meta.env.BASE_URL}vedio/4.png`} 
                         alt="Core Architecture"
                         className="w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-105"
                       />
@@ -289,7 +289,7 @@ export default function ProjectModal({ isOpen, onClose, onContactClick, project 
                       controls
                       className="w-full h-full object-cover"
                     >
-                      <source src={isP2 ? "/vedio/1.mp4" : "/vedio/5.mp4"} type="video/mp4" />
+                      <source src={isP2 ? `${import.meta.env.BASE_URL}vedio/1.mp4` : `${import.meta.env.BASE_URL}vedio/5.mp4`} type="video/mp4" />
                     </video>
                   </div>
                   <div className="flex items-center justify-center">
